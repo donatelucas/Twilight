@@ -10,39 +10,49 @@
     #E8EDDF - Dream Cream
     #F6BD60 - Rajah
     #696A6F - Grey Worm
+    #FFA723 - Bright Yellow
+    #B50E0E - International Orange
+    #1E96FF - Dodger Blue
 
     /* Fonts
     font-family: 'Merriweather', serif;
     font-family: 'Roboto', sans-serif;
 */
+html, body {
+    margin: 0;
+    height: 100%;
+}
 a {
     color: #F6BD60;
 }
-* {
-    box-sizing: border-box;
+.container {
+    width: 100%;
+    background-color: #000000;
 }
 .header {
-    background-color: #000000;
     padding: 5px 15px 5px 50px;
 }
 .header-container h1 {
     font-family: 'Roboto', monospace;
     color: #F0EFF4;
 }
+.header-container h2 {
+    font-family: 'Merriweather', serif;
+    color: #696A6F;
+    line-height: 0;
+}
 .menu-container {
     font-family: 'Roboto', monospace;
     align-items: center;
-    padding: 0px 15px 50px 50px;
-    background-color: #000000;
+    padding: 0px 15px 30px 50px;
     display: flex;
-    width: 100%;
     color: #E8EDDF;
 }
 .github, .twitter, .linkedin, .github a, .twitter a, .linkedin a {
     text-decoration: none;
     color: #F0EFF4;
-    align-items: center;
-    width: 15%;
+    padding: 0px 20px 0px 5px;
+    line-height: 0;
 }
 .github {
     border-bottom: 5px solid #3D2645;
@@ -53,14 +63,8 @@ a {
 .linkedin {
     border-bottom: 5px solid #DA4167;
 }
-
-.header-container h2 {
-    font-family: 'Merriweather', serif;
-    color: #696A6F;
-}
 .footer {
     font-family: 'Merriweather', serif;
-    background-color: #000000;
     text-align: center;
     color: #F0EFF4;
     padding: 10px;
@@ -68,9 +72,9 @@ a {
 .footer a {
     color: #DA4167;
 }
-.container {
-    display: flex;
+.inner-container {
     width: 100%;
+    display: flex;
     color: #E8EDDF;
 }
 .first, .second, .third {
