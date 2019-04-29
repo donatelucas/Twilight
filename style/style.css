@@ -1,19 +1,19 @@
 /*
     Here for some design pointers? I gotchu:
 
-    /* Colors
+    * Colors
     #000000 - Registration Black
     #3D2645 - Russian Violet
     #832161 - Dark Raspberry
     #DA4167 - Paradise Pink
     #F0EFF4 - Anti-Flash White
-    #E8EDDF - Dream Cream
+    #E8EDDF - Platinum
     #696A6F - Grey Worm
     #FFA723 - Bright Yellow
-    #B50E0E - International Orange
+    #B50E0E - International Orange (Engineering)
     #1E96FF - Dodger Blue
 
-    /* Fonts
+    * Google Fonts
     font-family: 'Merriweather', serif;
     font-family: 'Roboto', sans-serif;
 */
@@ -83,6 +83,8 @@ a {
 }
 .first, .second, .third {
     font-family: 'Roboto', monospace;
+    justify-content: center;
+    align-items: center;
     background-color: #3D2645;
     text-align: center;
     vertical-align: middle;
