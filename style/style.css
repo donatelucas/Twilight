@@ -1,51 +1,88 @@
 /*
-    Here for the colors? Let me help you:
+    Here for some design pointers? I gotchu:
+
+    /* Colors
     #000000 - Registration Black
     #3D2645 - Russian Violet
     #832161 - Dark Raspberry
     #DA4167 - Paradise Pink
     #F0EFF4 - Anti-Flash White
     #E8EDDF - Dream Cream
-    #F6AE2D - Saffron
+    #F6BD60 - Rajah
+    #696A6F - Grey Worm
+
+    /* Fonts
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
 */
 a {
-    color: #F6AE2D;
+    color: #F6BD60;
 }
-
 * {
     box-sizing: border-box;
 }
 .header {
     background-color: #000000;
-    color: #E8EDDF;
-}
-.header-container {
-    padding: 10px;
+    padding: 5px 15px 5px 50px;
 }
 .header-container h1 {
+    font-family: 'Roboto', monospace;
+    color: #F0EFF4;
+}
+.menu-container {
+    font-family: 'Roboto', monospace;
+    align-items: center;
+    padding: 0px 15px 50px 50px;
+    background-color: #000000;
+    display: flex;
+    width: 100%;
+    color: #E8EDDF;
+}
+.github, .twitter, .linkedin, .github a, .twitter a, .linkedin a {
+    text-decoration: none;
+    color: #F0EFF4;
+    align-items: center;
+    width: 15%;
+}
+.github {
+    border-bottom: 1px solid #3D2645;
+}
+.twitter {
+    border-bottom: 1px solid #832161;
+}
+.linkedin {
+    border-bottom: 1px solid #DA4167;
+}
 
+.header-container h2 {
+    font-family: 'Merriweather', serif;
+    color: #696A6F;
+}
+.footer {
+    font-family: 'Merriweather', serif;
+    background-color: #000000;
+    text-align: center;
+    color: #F0EFF4;
+    padding: 10px;
+}
+.footer a {
+    color: #DA4167;
 }
 .container {
     display: flex;
     width: 100%;
     color: #E8EDDF;
 }
-.container h2 {
-    color:
-}
-.first {
+.first, .second, .third {
+    font-family: 'Roboto', monospace;
     background-color: #3D2645;
+    text-align: center;
     width: 33.3333%;
     padding: 10px;
 }
 .second {
     background-color: #832161;
-    width: 33.3333%;
-    height: 1000px;
-    padding: 10px;
 }
 .third {
     background-color: #DA4167;
-    width: 33.3333%;
-    padding: 10px;
 }
