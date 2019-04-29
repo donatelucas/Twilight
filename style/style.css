@@ -18,7 +18,7 @@
     font-family: 'Roboto', sans-serif;
 */
 
-/*--- HTML, Body, Links ---*/
+/* --- HTML, Body, Links --- */
 html, body {
     margin: 0;
     height: 100%;
@@ -29,7 +29,7 @@ a {
     text-decoration: none;
 }
 
-/*--- Main container ---*/
+/* --- Main container --- */
 .container {
     max-width: 850px;
     margin: 0 auto;
@@ -48,7 +48,7 @@ a {
     line-height: 0;
 }
 
-/*--- Menu ---*/
+/* --- Menu --- */
 .menu-container {
     font-family: 'Roboto', monospace;
     align-items: center;
@@ -56,12 +56,12 @@ a {
     display: flex;
     color: #E8EDDF;
 }
-.github, .twitter, .linkedin, .github a, .twitter a, .linkedin a {
+.github, .twitter, .linkedin, .email, .github a, .twitter a, .linkedin a, .email a {
     color: #F0EFF4;
     padding: 0px 20px 0px 5px;
     line-height: 0;
 }
-.github {
+.github, .email {
     border-bottom: 5px solid #3D2645;
 }
 .twitter {
@@ -71,7 +71,7 @@ a {
     border-bottom: 5px solid #DA4167;
 }
 
-/*--- Description tag ---*/
+/* --- Description tag --- */
 .description {
     font-family: 'Merriweather', serif;
     font-size: 14px;
@@ -79,15 +79,16 @@ a {
     color: #F0EFF4;
 }
 
-/* --- Footer ---*/
+/* --- Footer --- */
 .footer {
     font-family: 'Merriweather', serif;
+    font-size: 12px;
     text-align: center;
     color: #F0EFF4;
     padding: 10px;
 }
 
-/*--- Three inner blocks ---*/
+/* --- Three blocks --- */
 .inner-container {
     width: 100%;
     display: flex;
@@ -96,7 +97,6 @@ a {
 .first, .second, .third {
     font-family: 'Roboto', monospace;
     background-color: #3D2645;
-    text-align: center;
     height: 65vh;
     width: 33.3333%;
     padding: 10px;
@@ -107,10 +107,44 @@ a {
 .third {
     background-color: #DA4167;
 }
-.first h2, .second h2, .third h2 {
+.first h2, .second h2, .third h2, .first p, .second p, .third p {
     position: relative;
+    text-align: center;
     float: none;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.first p, .second p, .third p {
+    font-size: 14px;
+}
+.arrow {
+    font-size: 36px;
+    position: relative;
+    text-align: center;
+    float: none;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.arrow p {
+    font-size: 36px;
+}
+
+/* --- Arrow --- */
+i {
+    border: solid #E8EDDF;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    position: relative;
+    text-align: center;
+    float: none;
+    top: 60%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+.angle {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 }
