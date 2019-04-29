@@ -8,7 +8,6 @@
     #DA4167 - Paradise Pink
     #F0EFF4 - Anti-Flash White
     #E8EDDF - Dream Cream
-    #F6BD60 - Rajah
     #696A6F - Grey Worm
     #FFA723 - Bright Yellow
     #B50E0E - International Orange
@@ -21,16 +20,19 @@
 html, body {
     margin: 0;
     height: 100%;
+    background-color: #000000;
 }
 a {
-    color: #F6BD60;
+    color: #DA4167;
+    text-decoration: none;
 }
 .container {
-    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
     background-color: #000000;
 }
 .header {
-    padding: 5px 15px 5px 50px;
+    padding: 5px 15px 5px 0px;
 }
 .header-container h1 {
     font-family: 'Roboto', monospace;
@@ -44,12 +46,11 @@ a {
 .menu-container {
     font-family: 'Roboto', monospace;
     align-items: center;
-    padding: 0px 15px 30px 50px;
+    padding: 15px 15px 15px 0px;
     display: flex;
     color: #E8EDDF;
 }
 .github, .twitter, .linkedin, .github a, .twitter a, .linkedin a {
-    text-decoration: none;
     color: #F0EFF4;
     padding: 0px 20px 0px 5px;
     line-height: 0;
@@ -63,14 +64,17 @@ a {
 .linkedin {
     border-bottom: 5px solid #DA4167;
 }
+.description {
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    padding: 15px 15px 5px 0px;
+    color: #F0EFF4;
+}
 .footer {
     font-family: 'Merriweather', serif;
     text-align: center;
     color: #F0EFF4;
     padding: 10px;
-}
-.footer a {
-    color: #DA4167;
 }
 .inner-container {
     width: 100%;
@@ -81,6 +85,8 @@ a {
     font-family: 'Roboto', monospace;
     background-color: #3D2645;
     text-align: center;
+    vertical-align: middle;
+    height: 65vh;
     width: 33.3333%;
     padding: 10px;
 }
