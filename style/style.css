@@ -1,5 +1,5 @@
 /*
-    Here for some design pointers? I gotchu:
+    Here for the pretty colors or fonts? I gotchu:
 
     * Colors
     #000000 - Registration Black
@@ -17,6 +17,8 @@
     font-family: 'Merriweather', serif;
     font-family: 'Roboto', sans-serif;
 */
+
+/*--- HTML, Body, Links ---*/
 html, body {
     margin: 0;
     height: 100%;
@@ -26,6 +28,8 @@ a {
     color: #DA4167;
     text-decoration: none;
 }
+
+/*--- Main container ---*/
 .container {
     max-width: 850px;
     margin: 0 auto;
@@ -43,6 +47,8 @@ a {
     color: #696A6F;
     line-height: 0;
 }
+
+/*--- Menu ---*/
 .menu-container {
     font-family: 'Roboto', monospace;
     align-items: center;
@@ -64,18 +70,24 @@ a {
 .linkedin {
     border-bottom: 5px solid #DA4167;
 }
+
+/*--- Description tag ---*/
 .description {
     font-family: 'Merriweather', serif;
     font-size: 14px;
     padding: 15px 15px 5px 0px;
     color: #F0EFF4;
 }
+
+/* --- Footer ---*/
 .footer {
     font-family: 'Merriweather', serif;
     text-align: center;
     color: #F0EFF4;
     padding: 10px;
 }
+
+/*--- Three inner blocks ---*/
 .inner-container {
     width: 100%;
     display: flex;
@@ -83,11 +95,8 @@ a {
 }
 .first, .second, .third {
     font-family: 'Roboto', monospace;
-    justify-content: center;
-    align-items: center;
     background-color: #3D2645;
     text-align: center;
-    vertical-align: middle;
     height: 65vh;
     width: 33.3333%;
     padding: 10px;
@@ -97,4 +106,11 @@ a {
 }
 .third {
     background-color: #DA4167;
+}
+.first h2, .second h2, .third h2 {
+    position: relative;
+    float: none;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
