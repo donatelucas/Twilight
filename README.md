@@ -8,5 +8,5 @@ A simple, eye-candy, contrasting, pure Javascript website.
 # How to Use it
 Click the download button on the right side to download the project
 
-#LICENSE
+# LICENSE
 MIT License, feel free to use it.
