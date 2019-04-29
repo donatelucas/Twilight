@@ -45,13 +45,13 @@ a {
     width: 15%;
 }
 .github {
-    border-bottom: 1px solid #3D2645;
+    border-bottom: 5px solid #3D2645;
 }
 .twitter {
-    border-bottom: 1px solid #832161;
+    border-bottom: 5px solid #832161;
 }
 .linkedin {
-    border-bottom: 1px solid #DA4167;
+    border-bottom: 5px solid #DA4167;
 }
 
 .header-container h2 {
