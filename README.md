@@ -11,6 +11,7 @@ A simple, eye-candy, contrasting, pure Javascript website.
 - Declare a language of choice
 - Declare a UTF symbol scheme
 - Make retractable block structure
+- Animate clicks on retractable block structure
 - Add SASS for some sassy css
 
 # How to Use it
