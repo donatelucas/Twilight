@@ -120,3 +120,13 @@ a {
 #first p, #second p, #third p {
     font-size: 14px;
 }
+#first-extended, #second-extended, #third-extended {
+    font-size: 24px;
+    position: relative;
+    text-align: left;
+    float: none;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}

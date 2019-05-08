@@ -1,79 +1,82 @@
 console.log("See ya, Space Cowboy");
 
-var stretched = false;
 var first = document.getElementById('first');
 var second = document.getElementById('second');
 var third = document.getElementById('third');
+var firstExtended = document.getElementById('first-extended');
 var innerContainer = document.getElementsByClassName('inner-container')[0];
-var firstFlag = false;
-var secondFlag = false;
-var thirdFlag = false;
+var stretched = false;
+var mainSize = "90%";
+var secondarySize = "2.5%";
 
+innerContainer.addEventListener('click', stretch);
 first.addEventListener('click', firstClick);
 second.addEventListener('click', secondClick);
 third.addEventListener('click', thirdClick);
-innerContainer.addEventListener('click', check);
+
+function stretch() {
+    stretched = !stretched;
+    console.log(stretched);
+    return stretched;
+}
 
 function updateFirst() {
-    first.style.width = "90%";
-    second.style.width = "2.5%";
-    third.style.width = "2.5%";
-    second.querySelector("h2").innerText = "";
-    second.querySelector("p").innerText = "";
-    third.querySelector("h2").innerText = "";
-    third.querySelector("p").innerText = "";
+    first.style.width = mainSize;
+    second.style.width = secondarySize;
+    third.style.width = secondarySize;
+    hideInitialContent();
+    firstNewContent();
 }
 
 function updateSecond() {
-    second.style.width = "90%";
-    first.style.width = "2.5%";
-    third.style.width = "2.5%";
-    first.querySelector("h2").innerText = "";
-    first.querySelector("p").innerText = "";
-    third.querySelector("h2").innerText = "";
-    third.querySelector("p").innerText = "";
+    second.style.width = mainSize;
+    first.style.width = secondarySize;
+    third.style.width = secondarySize;
+    hideInitialContent();
 }
 
 function updateThird() {
-    third.style.width = "90%";
-    first.style.width = "2.5%";
-    second.style.width = "2.5%";
-    first.querySelector("h2").innerText = "";
-    first.querySelector("p").innerText = "";
-    second.querySelector("h2").innerText = "";
-    second.querySelector("p").innerText = "";
-}
-
-function check() { // Checks if a panel is stretched
-    stretched = !stretched;
-    console.log("Stretched is: " + stretched);
-    return stretched;
+    third.style.width = mainSize;
+    first.style.width = secondarySize;
+    second.style.width = secondarySize;
+    hideInitialContent();
 }
 
 // If a click happens, switch the boolean value, and return it
 function firstClick() {
-    firstFlag = !firstFlag;
     updateFirst();
     secondClick;
     thirdClick;
-    console.log("First Flag is " + firstFlag);
-    return firstFlag;
 }
 
 function secondClick() {
-    secondFlag = !secondFlag;
     updateSecond();
     firstClick;
     thirdClick;
-    console.log("Second Flag is " + secondFlag);
-    return secondFlag;
 }
 
 function thirdClick() {
-    thirdFlag = !thirdFlag;
     updateThird();
     secondClick;
     firstClick;
-    console.log("Third Flag is " + thirdFlag);
-    return thirdFlag;
+}
+
+function hideInitialContent() {
+    first.querySelector("h2").innerText = "";
+    first.querySelector("p").innerText = "";
+    second.querySelector("h2").innerText = "";
+    second.querySelector("p").innerText = "";
+    third.querySelector("h2").innerText = "";
+    third.querySelector("p").innerText = "";
+}
+
+function firstNewContent() {
+    let block = document.querySelector("#first-extended");
+    if (stretched) {
+        if (block.style.display === "none") {
+            block.style.display = "block";
+        } else {
+            block.style.display = "none";
+        }
+    }
 }
