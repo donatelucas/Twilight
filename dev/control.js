@@ -8,8 +8,9 @@ var innerContainer = document.getElementsByClassName('inner-container')[0];
 var stretched = false;
 var mainSize = "90%";
 var secondarySize = "2.5%";
+var active = null;
+var timeOut = 100;
 
-innerContainer.addEventListener('click', stretch);
 first.addEventListener('click', firstClick);
 second.addEventListener('click', secondClick);
 third.addEventListener('click', thirdClick);
@@ -25,7 +26,6 @@ function updateFirst() {
     second.style.width = secondarySize;
     third.style.width = secondarySize;
     hideInitialContent();
-    firstNewContent();
 }
 
 function updateSecond() {
@@ -42,41 +42,61 @@ function updateThird() {
     hideInitialContent();
 }
 
-// If a click happens, switch the boolean value, and return it
 function firstClick() {
-    updateFirst();
+    active = 0;
+    hideShowContent();
     secondClick;
     thirdClick;
 }
 
 function secondClick() {
-    updateSecond();
+    active = 1;
+    hideShowContent();
     firstClick;
     thirdClick;
 }
 
 function thirdClick() {
-    updateThird();
+    active = 2;
+    hideShowContent();
     secondClick;
     firstClick;
 }
 
 function hideInitialContent() {
-    first.querySelector("h2").innerText = "";
-    first.querySelector("p").innerText = "";
-    second.querySelector("h2").innerText = "";
-    second.querySelector("p").innerText = "";
-    third.querySelector("h2").innerText = "";
-    third.querySelector("p").innerText = "";
+    if (active !== null)
+    {
+        first.querySelector("h2").innerText = "";
+        first.querySelector("p").innerText = "";
+        second.querySelector("h2").innerText = "";
+        second.querySelector("p").innerText = "";
+        third.querySelector("h2").innerText = "";
+        third.querySelector("p").innerText = "";
+    }
 }
 
-function firstNewContent() {
-    let block = document.querySelector("#first-extended");
-    if (stretched) {
-        if (block.style.display === "none") {
-            block.style.display = "block";
-        } else {
-            block.style.display = "none";
-        }
+function hideShowContent(){
+    switch(active) {
+        case 0:
+            console.log("Iron Man");
+            updateFirst();
+            document.querySelector("#second-extended").style.display = "none";
+            document.querySelector("#third-extended").style.display = "none";
+            document.querySelector("#first-extended").style.display = "block";
+            break;
+        case 1:
+            console.log("Spider-Man");
+            updateSecond();
+            document.querySelector("#first-extended").style.display = "none";
+            document.querySelector("#third-extended").style.display = "none";
+            document.querySelector("#second-extended").style.display = "block";
+            break;
+        case 2:
+            console.log("Captain America");
+            updateThird();
+            document.querySelector("#first-extended").style.display = "none";
+            document.querySelector("#second-extended").style.display = "none";
+            document.querySelector("#third-extended").style.display = "block";
+            break;
     }
 }

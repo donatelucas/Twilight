@@ -1,5 +1,5 @@
 /*
-    Here for the pretty colors or fonts? I gotchu:
+    Here for the pretty colors or fonts? I gotchu, fam:
 
     * Colors
     #000000 - Registration Black
@@ -101,7 +101,7 @@ a {
     height: 65vh;
     width: 33.3333%;
     padding: 10px;
-    transition: all 200ms ease-in-out 200ms;
+    transition: all 200ms ease-in-out 50ms;
 }
 #second {
     background-color: #832161;
@@ -121,7 +121,7 @@ a {
     font-size: 14px;
 }
 #first-extended, #second-extended, #third-extended {
-    font-size: 24px;
+    font-size: 16px;
     position: relative;
     text-align: left;
     float: none;
