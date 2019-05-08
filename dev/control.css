@@ -90,12 +90,12 @@ a {
 
 /* --- Three blocks --- */
 .inner-container {
+    font-family: 'Roboto', monospace;
     width: 100%;
     display: flex;
     color: #E8EDDF;
 }
 #first, #second, #third {
-    font-family: 'Roboto', monospace;
     background-color: #3D2645;
     height: 65vh;
     width: 33.3333%;
