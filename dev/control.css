@@ -94,12 +94,14 @@ a {
     width: 100%;
     display: flex;
     color: #E8EDDF;
+
 }
 #first, #second, #third {
     background-color: #3D2645;
     height: 65vh;
     width: 33.3333%;
     padding: 10px;
+    transition: all 200ms ease-in-out 200ms;
 }
 #second {
     background-color: #832161;

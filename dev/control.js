@@ -4,9 +4,15 @@ var stretched = false;
 var first = document.getElementById('first');
 var second = document.getElementById('second');
 var third = document.getElementById('third');
+var innerContainer = document.getElementsByClassName('inner-container')[0];
 var firstFlag = false;
 var secondFlag = false;
 var thirdFlag = false;
+
+first.addEventListener('click', firstClick);
+second.addEventListener('click', secondClick);
+third.addEventListener('click', thirdClick);
+innerContainer.addEventListener('click', check);
 
 function updateFirst() {
     first.style.width = "90%";
@@ -16,9 +22,6 @@ function updateFirst() {
     second.querySelector("p").innerText = "";
     third.querySelector("h2").innerText = "";
     third.querySelector("p").innerText = "";
-    // let listNode = document.createElement("UL");
-    // let liNode = document.createElement("LI");
-    // listNode.appendChild(liNode);
 }
 
 function updateSecond() {
@@ -43,12 +46,14 @@ function updateThird() {
 
 function check() { // Checks if a panel is stretched
     stretched = !stretched;
+    console.log("Stretched is: " + stretched);
     return stretched;
 }
 
 // If a click happens, switch the boolean value, and return it
 function firstClick() {
     firstFlag = !firstFlag;
+    updateFirst();
     secondClick;
     thirdClick;
     console.log("First Flag is " + firstFlag);
@@ -57,6 +62,7 @@ function firstClick() {
 
 function secondClick() {
     secondFlag = !secondFlag;
+    updateSecond();
     firstClick;
     thirdClick;
     console.log("Second Flag is " + secondFlag);
@@ -65,6 +71,7 @@ function secondClick() {
 
 function thirdClick() {
     thirdFlag = !thirdFlag;
+    updateThird();
     secondClick;
     firstClick;
     console.log("Third Flag is " + thirdFlag);
