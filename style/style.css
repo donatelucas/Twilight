@@ -23,6 +23,7 @@ html, body {
     margin: 0;
     height: 100%;
     background-color: #000000;
+    padding: 0px 10px;
 }
 a {
     color: #DA4167;
@@ -36,38 +37,37 @@ a {
     background-color: #000000;
 }
 .header {
-    padding: 5px 15px 5px 0px;
+    padding: 5px 10px;
 }
-.header-container h1 {
+.header h1 {
     font-family: 'Roboto', monospace;
     color: #F0EFF4;
 }
-.header-container h2 {
+.header h2 {
     font-family: 'Merriweather', serif;
     color: #696A6F;
-    line-height: 0;
 }
 
 /* --- Menu --- */
 .menu-container {
     font-family: 'Roboto', monospace;
     align-items: center;
-    padding: 15px 15px 15px 0px;
+    padding: 15px 10px;
     display: flex;
     color: #E8EDDF;
 }
-.github, .twitter, .linkedin, .email, .github a, .twitter a, .linkedin a, .email a {
+#github, #twitter, #linkedin, #email, #github a, #twitter a, #linkedin a, #email a {
     color: #F0EFF4;
     padding: 0px 20px 0px 5px;
     line-height: 0;
 }
-.github, .email {
+#github, #email {
     border-bottom: 5px solid #3D2645;
 }
-.twitter {
+#twitter {
     border-bottom: 5px solid #832161;
 }
-.linkedin {
+#linkedin {
     border-bottom: 5px solid #DA4167;
 }
 
@@ -98,11 +98,11 @@ a {
 }
 #first, #second, #third {
     background-color: #3D2645;
-    height: 65vh;
     width: 33.3333%;
     padding: 10px;
     transition-property: width;
     transition-duration: 50ms;
+    height: max-content;
     overflow: hidden;
 }
 #second {
@@ -115,20 +115,46 @@ a {
     position: relative;
     text-align: center;
     float: none;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    vertical-align: middle;
 }
 #first p, #second p, #third p {
     font-size: 14px;
 }
 #first-extended, #second-extended, #third-extended {
-    font-size: 16px;
+    padding: 0px 10px;
+    font-size: 14px;
     position: relative;
+    vertical-align: middle !important;
     text-align: left;
     float: none;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: none;
+    overflow: visible;
+}
+[id*="ext"] p {
+    text-align: left !important;
+}
+[id*="ext"] a {
+    font-size: 16px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    [class*="col-"] {
+        padding: 0px 5px 0px 1px !important;
+    }
+}
+@media only screen and (max-width: 320px) {
+    [class*="col-"] {
+        font-size: 14px;
+        padding: 0px 0px !important;
+    }
+    [id*="ext"] li {
+        padding: 2px 0px;
+        overflow: scroll;
+        text-align: left;
+        width: 100%;
+    }
+    [id*="ext"] p {
+        padding: 15px 0px !important;
+    }
 }

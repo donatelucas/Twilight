@@ -4,8 +4,6 @@ var first = document.getElementById('first');
 var second = document.getElementById('second');
 var third = document.getElementById('third');
 var firstExtended = document.getElementById('first-extended');
-var innerContainer = document.getElementsByClassName('inner-container')[0];
-var stretched = false;
 var mainSize = "90%";
 var secondarySize = "2.5%";
 var active = null;
@@ -13,12 +11,6 @@ var active = null;
 first.addEventListener('click', firstClick);
 second.addEventListener('click', secondClick);
 third.addEventListener('click', thirdClick);
-
-function stretch() {
-    stretched = !stretched;
-    console.log(stretched);
-    return stretched;
-}
 
 function updateFirst() {
     first.style.width = mainSize;
@@ -64,13 +56,10 @@ function hideInitialContent() {
         if (active !== null)
         {
             first.querySelector("h2").innerText = "";
-            first.querySelector("p").innerText = "";
             second.querySelector("h2").innerText = "";
-            second.querySelector("p").innerText = "";
             third.querySelector("h2").innerText = "";
-            third.querySelector("p").innerText = "";
         }
-    }, 350);
+    }, 250);
 }
 
 function hideShowContent(){
@@ -96,5 +85,5 @@ function hideShowContent(){
             document.querySelector("#third-extended").style.display = "block";
             break;
         }
-    }, 500);
+    }, 400);
 }
