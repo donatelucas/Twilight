@@ -13,14 +13,15 @@ A simple, eye-candy, contrasting, pure Javascript website.
 - [x] Make retractable block structure
 - [x] Add transitions for clicks on retractable block structure (Added on 5/8/2019)
 - [x] Make it even more mobile-friendly (Added on 5/9/2019)
+- [x] Improve CSS inside inner-container (Added on 5/9/2019)
 
 # ToDo
-1 [ ] Make it *even more* mobile-friendly:
+1. [ ] Make it *even more* mobile-friendly:
     - [ ] Add better font-sizes for smaller than 768px width;
     - [ ] Add stacking for block structure for smaller than 768px width;
-- [ ] Add SASS for some sassy css
-- [ ] Improve CSS inside inner-container
-- [ ] Add favicon
+2. [ ] Add SASS for some sassy css
+3. [ ] Add favicon
+4. [ ] Better design for inner-container
 
 # How to Use it
 Click the download button on the right side to download the project
