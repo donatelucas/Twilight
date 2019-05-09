@@ -101,7 +101,9 @@ a {
     height: 65vh;
     width: 33.3333%;
     padding: 10px;
-    transition: all 200ms ease-in-out 50ms;
+    transition-property: width;
+    transition-duration: 50ms;
+    overflow: hidden;
 }
 #second {
     background-color: #832161;

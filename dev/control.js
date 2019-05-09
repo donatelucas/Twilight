@@ -9,7 +9,6 @@ var stretched = false;
 var mainSize = "90%";
 var secondarySize = "2.5%";
 var active = null;
-var timeOut = 100;
 
 first.addEventListener('click', firstClick);
 second.addEventListener('click', secondClick);
@@ -25,21 +24,18 @@ function updateFirst() {
     first.style.width = mainSize;
     second.style.width = secondarySize;
     third.style.width = secondarySize;
-    hideInitialContent();
 }
 
 function updateSecond() {
     second.style.width = mainSize;
     first.style.width = secondarySize;
     third.style.width = secondarySize;
-    hideInitialContent();
 }
 
 function updateThird() {
     third.style.width = mainSize;
     first.style.width = secondarySize;
     second.style.width = secondarySize;
-    hideInitialContent();
 }
 
 function firstClick() {
@@ -64,39 +60,44 @@ function thirdClick() {
 }
 
 function hideInitialContent() {
-    if (active !== null)
-    {
-        first.querySelector("h2").innerText = "";
-        first.querySelector("p").innerText = "";
-        second.querySelector("h2").innerText = "";
-        second.querySelector("p").innerText = "";
-        third.querySelector("h2").innerText = "";
-        third.querySelector("p").innerText = "";
-    }
+    setTimeout(function() {
+        if (active !== null)
+        {
+            first.querySelector("h2").innerText = "";
+            first.querySelector("p").innerText = "";
+            second.querySelector("h2").innerText = "";
+            second.querySelector("p").innerText = "";
+            third.querySelector("h2").innerText = "";
+            third.querySelector("p").innerText = "";
+        }
+    }, 350);
 }
 
 function hideShowContent(){
-    switch(active) {
+    hideInitialContent();
+    setTimeout(function() {
+        switch(active) {
         case 0:
-            console.log("Iron Man");
             updateFirst();
             document.querySelector("#second-extended").style.display = "none";
             document.querySelector("#third-extended").style.display = "none";
             document.querySelector("#first-extended").style.display = "block";
             break;
         case 1:
-            console.log("Spider-Man");
             updateSecond();
             document.querySelector("#first-extended").style.display = "none";
             document.querySelector("#third-extended").style.display = "none";
             document.querySelector("#second-extended").style.display = "block";
             break;
         case 2:
-            console.log("Captain America");
             updateThird();
             document.querySelector("#first-extended").style.display = "none";
             document.querySelector("#second-extended").style.display = "none";
             document.querySelector("#third-extended").style.display = "block";
             break;
-    }
+        }
+    }, 500);
 }
+
+<title>Lucas Perez - Software Engineer in Chicago</title>
+        
