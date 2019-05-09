@@ -6,19 +6,21 @@
 A simple, eye-candy, contrasting, pure Javascript website.
 
 # Completed
-- Initial design decision ✅ (Added on 5/4/2019)
-- Initial version release ✅ (Added on 5/4/2019)
-- Declare a language of choice ✅ (Added on 5/8/2019)
-- Declare a UTF symbol scheme ✅ (Added on 5/8/2019)
-- Make retractable block structure ✅
-- Add transitions for clicks on retractable block structure ✅ (Added on 5/8/2019)
-- Make it even more mobile-friendly ✅ (Added on 5/9/2019)
+- [x] Initial design decision (Added on 5/4/2019)
+- [x] Initial version release (Added on 5/4/2019)
+- [x] Declare a language of choice (Added on 5/8/2019)
+- [x] Declare a UTF symbol scheme (Added on 5/8/2019)
+- [x] Make retractable block structure
+- [x] Add transitions for clicks on retractable block structure (Added on 5/8/2019)
+- [x] Make it even more mobile-friendly (Added on 5/9/2019)
 
 # ToDo
-- Make it *even more* mobile-friendly
-- Add SASS for some sassy css
-- Improve CSS inside inner-container
-- Add favicon
+1 [ ] Make it *even more* mobile-friendly:
+    - [ ] Add better font-sizes for smaller than 768px width;
+    - [ ] Add stacking for block structure for smaller than 768px width;
+- [ ] Add SASS for some sassy css
+- [ ] Improve CSS inside inner-container
+- [ ] Add favicon
 
 # How to Use it
 Click the download button on the right side to download the project
