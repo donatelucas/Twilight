@@ -22,6 +22,7 @@ A simple, eye-candy, contrasting, pure Javascript website.
 2. [ ] Add SASS for some sassy css
 3. [ ] Add favicon
 4. [ ] Better design for inner-container
+5. [ ] Change block structure to row structure in all medias;
 
 # How to Use it
 Click the download button on the right side to download the project
