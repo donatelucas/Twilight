@@ -12,9 +12,10 @@ A simple, eye-candy, contrasting, pure Javascript website.
 - Declare a UTF symbol scheme ✅ (Added on 5/8/2019)
 - Make retractable block structure ✅
 - Add transitions for clicks on retractable block structure ✅ (Added on 5/8/2019)
+- Make it even more mobile-friendly ✅ (Added on 5/9/2019)
 
 # ToDo
-- Make it even more mobile-friendly
+- Make it *even more* mobile-friendly
 - Add SASS for some sassy css
 - Improve CSS inside inner-container
 - Add favicon
