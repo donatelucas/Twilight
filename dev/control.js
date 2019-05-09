@@ -98,3 +98,6 @@ function hideShowContent(){
         }
     }, 500);
 }
+
+<title>Lucas Perez - Software Engineer in Chicago</title>
+        
