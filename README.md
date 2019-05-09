@@ -5,7 +5,7 @@
 # About
 A simple, eye-candy, contrasting, pure Javascript website.
 
-#Completed
+# Completed
 - Initial design decision ✅ (Added on 5/4/2019)
 - Initial version release ✅ (Added on 5/4/2019)
 - Declare a language of choice ✅ (Added on 5/8/2019)
