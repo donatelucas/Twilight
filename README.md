@@ -1,6 +1,6 @@
-# donatelucas.com
+# Twilight 
 
-![donatelucas.com](https://github.com/donatelucas/donatelucas.com/blob/master/img/screenshot01.png)
+![donatelucas.com](https://github.com/donatelucas/Twilight/blob/master/img/Screenshot_2.png)
 
 # About
 A simple, eye-candy, contrasting, pure Javascript website.
