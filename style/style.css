@@ -140,12 +140,6 @@ a {
     font-size: 16px;
 }
 
-/* Media Queries */
-@media only screen and (min-width: 400px) {
-    [class*="col"] {
-        font-size: 14px;
-    }
-}
 
 @media only screen and (max-width: 320px) {
     [class*="col-"] {
@@ -162,15 +156,6 @@ a {
         padding: 15px 0px !important;
     }
 }
-/* iPad */
-@media only screen and (min-width: 768px){
-    [class*="col-"] {
-        padding: 0px 5px 0px 1px !important;
-    }
-    h2 {
-        font-size: 24px;
-    }
-}
 /* Galaxy S5 */
 @@media only screen and (min-width: 320px) and (max-width: 380px){
     [class*="col-"] {
@@ -183,8 +168,15 @@ a {
         font-size: 22px;
     }
 }
+/*
+    Media Queries
+*/
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    [class*="col-"] {
+        padding: 0px 5px 0px 10px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
