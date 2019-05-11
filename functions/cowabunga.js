@@ -3,7 +3,6 @@ console.log("See ya, Space Cowboy");
 var first = document.getElementById('first');
 var second = document.getElementById('second');
 var third = document.getElementById('third');
-var firstExtended = document.getElementById('first-extended');
 var mainSize = "90%";
 var secondarySize = "2.5%";
 var active = null;

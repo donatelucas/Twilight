@@ -24,7 +24,6 @@
 }
 html, body {
     margin: 0;
-    height: 100%;
     background-color: #000000;
     padding: 0px 10px;
 }
@@ -37,7 +36,9 @@ a {
 .container {
     max-width: 850px;
     margin: 0 auto;
-    background-color: #000000;
+    content: "";
+    clear: both;
+    display: table;
 }
 .header {
     padding: 5px 10px;
@@ -77,16 +78,16 @@ a {
 /* --- Description tag --- */
 .description {
     font-family: 'Merriweather', serif;
-    font-size: 14px;
     padding: 15px 15px 5px 0px;
+    font-size: 14px;
     color: #F0EFF4;
 }
 
 /* --- Footer --- */
 .footer {
     font-family: 'Merriweather', serif;
-    font-size: 12px;
     text-align: center;
+    font-size: 12px;
     color: #F0EFF4;
     padding: 10px;
 }
@@ -94,35 +95,33 @@ a {
 /* --- Three blocks --- */
 .inner-container {
     font-family: 'Roboto', monospace;
-    width: 100%;
-    display: flex;
     color: #E8EDDF;
-
+    padding: 10px;
+    width: 100%;
 }
 #first, #second, #third {
+    padding: inherit;
+}
+#first {
     background-color: #3D2645;
-    width: 33.3333%;
-    padding: 10px;
-    transition-property: width;
-    transition-duration: 50ms;
-    height: max-content;
-    overflow: hidden;
+
 }
 #second {
     background-color: #832161;
+
 }
 #third {
     background-color: #DA4167;
 }
-#first h2, #second h2, #third h2, #first p, #second p, #third p {
-    position: relative;
-    text-align: center;
-    float: none;
-    vertical-align: middle;
+.inner-block {
+    transition-property: width;
+    transition-duration: 50ms;
+    height: max-content;
+    overflow: hidden;
+    padding: 10px;
+    display: none;
 }
-#first p, #second p, #third p {
-    font-size: 14px;
-}
+/*
 #first-extended, #second-extended, #third-extended {
     padding: 0px 10px;
     font-size: 14px;
@@ -132,14 +131,7 @@ a {
     float: none;
     display: none;
     overflow: visible;
-}
-[id*="ext"] p {
-    text-align: left !important;
-}
-[id*="ext"] a {
-    font-size: 16px;
-}
-
+} */
 
 @media only screen and (max-width: 320px) {
     [class*="col-"] {
