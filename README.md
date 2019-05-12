@@ -1,4 +1,4 @@
-# donatelucas.com(https://donatelucas.com)
+# [donatelucas.com](https://donatelucas.com)
 
 ![donatelucas.com](https://github.com/donatelucas/Twilight/blob/master/img/Screenshot_2.png)
 
@@ -14,6 +14,7 @@ A simple, eye-candy, contrasting, pure Javascript website.
 - [x] Add transitions for clicks on retractable block structure (Added on 5/8/2019)
 - [x] Make it even more mobile-friendly (Added on 5/9/2019)
 - [x] Improve CSS inside inner-container (Added on 5/9/2019)
+- [x] Changed orientation of blocks to stacked horizontal for better readability (Added on 5/11/2019)
 
 # ToDo
 1. [ ] Make it *even more* mobile-friendly:
