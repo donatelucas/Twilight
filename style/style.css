@@ -101,6 +101,7 @@ a {
     width: 100%;
 }
 #first, #second, #third {
+    cursor: pointer;
     padding: inherit;
 }
 #first {
