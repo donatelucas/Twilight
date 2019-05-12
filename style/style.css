@@ -34,7 +34,7 @@ a {
 
 /* --- Main container --- */
 .container {
-    max-width: 850px;
+    max-width: 650px;
     margin: 0 auto;
     content: "";
     clear: both;
@@ -57,6 +57,7 @@ a {
     font-family: 'Roboto', monospace;
     align-items: center;
     padding: 15px 10px;
+    max-width: 768px;
     display: flex;
     color: #E8EDDF;
 }
@@ -104,11 +105,9 @@ a {
 }
 #first {
     background-color: #3D2645;
-
 }
 #second {
     background-color: #832161;
-
 }
 #third {
     background-color: #DA4167;
@@ -116,11 +115,14 @@ a {
 .inner-block {
     transition-property: width;
     transition-duration: 50ms;
-    width: 850px;
+    max-width: inherit;
     height: max-content;
     overflow: hidden;
     padding: 10px;
     display: none;
+}
+#two {
+    padding: 25px;
 }
 
 /******************************
