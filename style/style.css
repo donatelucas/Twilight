@@ -24,7 +24,6 @@
 }
 html, body {
     margin: 0;
-    height: 100%;
     background-color: #000000;
     padding: 0px 10px;
 }
@@ -37,7 +36,9 @@ a {
 .container {
     max-width: 850px;
     margin: 0 auto;
-    background-color: #000000;
+    content: "";
+    clear: both;
+    display: table;
 }
 .header {
     padding: 5px 10px;
@@ -77,16 +78,16 @@ a {
 /* --- Description tag --- */
 .description {
     font-family: 'Merriweather', serif;
-    font-size: 14px;
     padding: 15px 15px 5px 0px;
+    font-size: 14px;
     color: #F0EFF4;
 }
 
 /* --- Footer --- */
 .footer {
     font-family: 'Merriweather', serif;
-    font-size: 12px;
     text-align: center;
+    font-size: 12px;
     color: #F0EFF4;
     padding: 10px;
 }
@@ -94,83 +95,37 @@ a {
 /* --- Three blocks --- */
 .inner-container {
     font-family: 'Roboto', monospace;
-    width: 100%;
-    display: flex;
     color: #E8EDDF;
-
+    padding: 10px;
+    width: 100%;
 }
 #first, #second, #third {
+    padding: inherit;
+}
+#first {
     background-color: #3D2645;
-    width: 33.3333%;
-    padding: 10px;
-    transition-property: width;
-    transition-duration: 50ms;
-    height: max-content;
-    overflow: hidden;
+
 }
 #second {
     background-color: #832161;
+
 }
 #third {
     background-color: #DA4167;
 }
-#first h2, #second h2, #third h2, #first p, #second p, #third p {
-    position: relative;
-    text-align: center;
-    float: none;
-    vertical-align: middle;
-}
-#first p, #second p, #third p {
-    font-size: 14px;
-}
-#first-extended, #second-extended, #third-extended {
-    padding: 0px 10px;
-    font-size: 14px;
-    position: relative;
-    vertical-align: middle !important;
-    text-align: left;
-    float: none;
+.inner-block {
+    transition-property: width;
+    transition-duration: 50ms;
+    width: 850px;
+    height: max-content;
+    overflow: hidden;
+    padding: 10px;
     display: none;
-    overflow: visible;
-}
-[id*="ext"] p {
-    text-align: left !important;
-}
-[id*="ext"] a {
-    font-size: 16px;
 }
 
-
-@media only screen and (max-width: 320px) {
-    [class*="col-"] {
-        font-size: 14px;
-        padding: 0px 0px !important;
-    }
-    [id*="ext"] li {
-        padding: 2px 0px;
-        overflow: scroll;
-        text-align: left;
-        width: 100%;
-    }
-    [id*="ext"] p {
-        padding: 15px 0px !important;
-    }
-}
-/* Galaxy S5 */
-@@media only screen and (min-width: 320px) and (max-width: 380px){
-    [class*="col-"] {
-        padding: 0px 5px 0px 1px !important;
-    }
-    #first h2, #second h2, #third h2 {
-        font-size: 12px;
-    }
-    .header h2 {
-        font-size: 22px;
-    }
-}
-/*
-    Media Queries
-*/
+/******************************
+        Media Queries
+*******************************/
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
