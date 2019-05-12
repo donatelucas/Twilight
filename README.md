@@ -3,7 +3,7 @@
 ![donatelucas.com](https://github.com/donatelucas/Twilight/blob/master/img/screenshot03.png)
 
 # About
-A simple, eye-candy, contrasting, pure Javascript website.
+A simple, eye-candy, contrasting, pure HTML/CSS && Javascript website.
 
 # Completed
 - [x] Initial design decision (Added on 5/4/2019)
