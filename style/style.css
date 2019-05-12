@@ -116,22 +116,12 @@ a {
 .inner-block {
     transition-property: width;
     transition-duration: 50ms;
+    width: 850px;
     height: max-content;
     overflow: hidden;
     padding: 10px;
     display: none;
 }
-/*
-#first-extended, #second-extended, #third-extended {
-    padding: 0px 10px;
-    font-size: 14px;
-    position: relative;
-    vertical-align: middle !important;
-    text-align: left;
-    float: none;
-    display: none;
-    overflow: visible;
-} */
 
 @media only screen and (max-width: 320px) {
     [class*="col-"] {
@@ -178,6 +168,7 @@ a {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -186,4 +177,5 @@ a {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+
 }
