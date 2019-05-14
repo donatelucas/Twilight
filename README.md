@@ -15,15 +15,15 @@ A simple, eye-candy, contrasting, pure HTML/CSS && Javascript website.
 - [x] Make it even more mobile-friendly (Added on 5/9/2019)
 - [x] Improve CSS inside inner-container (Added on 5/9/2019)
 - [x] Changed orientation of blocks to stacked horizontal for better readability (Added on 5/11/2019)
+- [x] Add stacking for block structure for smaller than 768px width (Added on 5/14/2019)
 
 # ToDo
 1. [ ] Make it *even more* mobile-friendly:
-    - [ ] Add better font-sizes for smaller than 768px width;
-    - [x] Add stacking for block structure for smaller than 768px width;
+    - [ ] Add better font-sizes for smaller than 768px width
 2. [ ] Add SASS for some sassy css
 3. [ ] Add favicon
 4. [ ] Better design for inner-container
-5. [ ] Change block structure to row structure in all medias;
+5. [ ] Change block structure to row structure in all medias
 
 # How to Use it
 Click the download button on the right side to download the project
