@@ -19,7 +19,7 @@ A simple, eye-candy, contrasting, pure HTML/CSS && Javascript website.
 # ToDo
 1. [ ] Make it *even more* mobile-friendly:
     - [ ] Add better font-sizes for smaller than 768px width;
-    - [ ] Add stacking for block structure for smaller than 768px width;
+    - [x] Add stacking for block structure for smaller than 768px width;
 2. [ ] Add SASS for some sassy css
 3. [ ] Add favicon
 4. [ ] Better design for inner-container
